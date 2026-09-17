@@ -9,6 +9,6 @@ command = "pnpm install --frozen-lockfile && pnpm run pages:build"
 NEXT_PUBLIC_STORAGE_TYPE = "localstorage"
 
 [vars]
-USERNAME = "admin"
-AUTH_PASSWORD = "123456"
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "123456"
 NEXT_PUBLIC_ENABLE_REGISTER = "true"
