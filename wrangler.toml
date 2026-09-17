@@ -5,8 +5,13 @@ compatibility_flags = ["nodejs_compat"]
 [build]
 command = "pnpm install --frozen-lockfile && pnpm run pages:build"
 
+[[d1_databases]]
+binding = "DB"
+database_name = "katelyatv"
+database_id = "36566478-c2fe-4b26-9249-a0bcec352eae"
+
 [[build.environment_variables]]
-NEXT_PUBLIC_STORAGE_TYPE = "localstorage"
+NEXT_PUBLIC_STORAGE_TYPE = "d1"
 
 [vars]
 ADMIN_USERNAME = "admin"
