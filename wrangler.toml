@@ -2,18 +2,13 @@ name = "katelyatv"
 compatibility_date = "2023-12-01"
 compatibility_flags = ["nodejs_compat"]
 
-[[d1_databases]]
-binding = "DB"
-database_name = "katelyatv"
-database_id = "5db955b7-a991-4d7c-a5dc-e62694df5fde"  # 替换为步骤1中获得的ID
-
 [build]
 command = "pnpm install --frozen-lockfile && pnpm run pages:build"
 
 [[build.environment_variables]]
-NEXT_PUBLIC_STORAGE_TYPE = "d1"
+NEXT_PUBLIC_STORAGE_TYPE = "localstorage"
 
 [vars]
 USERNAME = "admin"
-PASSWORD = "Asd$500.."
+PASSWORD = "123456"
 NEXT_PUBLIC_ENABLE_REGISTER = "true"
